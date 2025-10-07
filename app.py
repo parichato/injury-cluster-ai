@@ -10,7 +10,7 @@ cat_model = joblib.load("predict_catboost_multi.pkl")
 kmeans = joblib.load("injury_cluster.pkl")
 scaler_cluster = joblib.load("scaler.pkl")
 rules = pd.read_csv("association_rules.csv")
-metrics = json.load(open("catboost_metrics.json"))
+
 
 # ===============================
 # 🔹 ตั้งค่าเบื้องต้นของหน้าเว็บ
