@@ -7,9 +7,8 @@ import joblib, json
 # 🔹 โหลดโมเดลทั้งหมด
 # ===============================
 cat_model = joblib.load("predict_catboost_multi.pkl")
-scaler_pred = joblib.load("predict_scaler.pkl")
-kmeans = joblib.load("cluster_kmeans.pkl")
-scaler_cluster = joblib.load("cluster_scaler.pkl")
+kmeans = joblib.load("injury_cluster.pkl")
+scaler_cluster = joblib.load("scaler.pkl")
 rules = pd.read_csv("association_rules.csv")
 metrics = json.load(open("catboost_metrics.json"))
 
